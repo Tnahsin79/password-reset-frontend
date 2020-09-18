@@ -75,11 +75,12 @@ async function signup()
                 "Content-Type":"application/json"
             }
         });
-        console.log(temp);
+        //console.log(temp);
         alert("Data sent");
     }
     catch(error)
     {
+        console.log(error);
         alert("try again");
     }
 }
