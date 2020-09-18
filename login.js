@@ -28,12 +28,23 @@ var button=document.createElement("button");
 button.setAttribute("class","btn btn-primary");
 button.setAttribute("type","submit");
 button.innerText="LOG IN";
-formdiv.appendChild(form);
+var br3=document.createElement("br");
+var forgot=document.createElement("button");
+forgot.setAttribute("class","btn btn-primary");
+//forgot.setAttribute("type","submit");
+forgot.setAttribute("onclick","forgotPwd()");
+forgot.innerText="FORGOT PASSWORD";
+
 form.appendChild(email);
 form.appendChild(br1);
 form.appendChild(pwd);
 form.appendChild(br2);
 form.appendChild(button);
+//form.appendChild(br3);
+//form.appendChild(forgot);
+formdiv.appendChild(form);
+formdiv.appendChild(br3);
+formdiv.appendChild(forgot);
 
 maindiv.appendChild(h1);
 maindiv.appendChild(formdiv);

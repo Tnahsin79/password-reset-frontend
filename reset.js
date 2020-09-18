@@ -3,7 +3,7 @@ maindiv.setAttribute("class","container");
 
 var h1=document.createElement("h1");
 h1.setAttribute("class","display-1");
-h1.innerText="SIGNUP";
+h1.innerText="RESET PASSWORD";
 
 var formdiv=document.createElement("div");
 formdiv.setAttribute("class","container-fluid");
@@ -61,21 +61,7 @@ async function signup()
 {
     try
     {
-        var data={
-            first_name:document.getElementById("fname").value,
-            last_name:document.getElementById("lname").value,
-            email:document.getElementById("email").value,
-            password:document.getElementById("pwd").value
-        }
-        let temp=await fetch("https://user-login-fs.herokuapp.com/register",{
-            method:"POST",
-            body:JSON.stringify(data),
-            headers:{
-                "Content-Type":"application/json"
-            }
-        });
-        console.log(temp);
-        alert("Data sent");
+        //alert("working");
     }
     catch(error)
     {
