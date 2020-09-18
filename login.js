@@ -54,10 +54,23 @@ async function login()
 {
     try
     {
-        //alert("working");
+        var data={
+            email:document.getElementById("email").value,
+            password:document.getElementById("pwd").value
+        }
+        let temp=await fetch("https://user-login-fs.herokuapp.com/login",{
+            method:"POST",
+            body:JSON.stringify(data),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        });
+        //console.log(temp);
+        alert("Data sent");
     }
     catch(error)
     {
+        console.log(error);
         alert("try again");
     }
 }
