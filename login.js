@@ -66,7 +66,7 @@ async function login()
             }
         });
         //console.log(temp);
-        alert("Data sent");
+        //alert("Data sent");
     }
     catch(error)
     {
