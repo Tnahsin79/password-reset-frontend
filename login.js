@@ -58,7 +58,7 @@ async function login()
             email:document.getElementById("email").value,
             password:document.getElementById("pwd").value
         }
-        let temp=await fetch("https://user-login-fs.herokuapp.com/login",{
+        let temp=await fetch("https://user-login-fs.herokuapp.com/users/login",{
             method:"POST",
             body:JSON.stringify(data),
             headers:{

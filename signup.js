@@ -76,7 +76,7 @@ async function signup()
             }
         });
         //console.log(temp);
-        alert("Data sent");
+        alert("Verification mail sent");
     }
     catch(error)
     {
