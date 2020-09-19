@@ -68,7 +68,7 @@ async function signup()
             password:document.getElementById("pwd").value,
             status:false
         }
-        let temp=await fetch("https://user-login-fs.herokuapp.com/register",{
+        let temp=await fetch("https://user-login-fs.herokuapp.com/users/register",{
             method:"POST",
             body:JSON.stringify(data),
             headers:{
