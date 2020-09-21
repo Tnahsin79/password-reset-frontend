@@ -29,7 +29,7 @@ cnfpwd.setAttribute("type","password");
 cnfpwd.setAttribute("id","cnfpwd");
 cnfpwd.setAttribute("required",true);
 cnfpwd.setAttribute("class","form-control");
-cnfpwd.setAttribute("placeholder","ENTER PASSWORD");
+cnfpwd.setAttribute("placeholder","CONFIRM PASSWORD");
 var br3=document.createElement("br");
 var button=document.createElement("button");
 button.setAttribute("class","btn btn-primary");

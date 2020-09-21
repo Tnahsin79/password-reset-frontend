@@ -29,11 +29,14 @@ button.setAttribute("class","btn btn-primary");
 button.setAttribute("type","submit");
 button.innerText="LOG IN";
 var br3=document.createElement("br");
+var a1=document.createElement("a")
+a1.setAttribute("href","validate.html");
 var forgot=document.createElement("button");
 forgot.setAttribute("class","btn btn-primary");
 //forgot.setAttribute("type","submit");
 forgot.setAttribute("onclick","forgotPwd()");
 forgot.innerText="FORGOT PASSWORD";
+a1.appendChild(forgot);
 
 form.appendChild(email);
 form.appendChild(br1);
@@ -44,7 +47,7 @@ form.appendChild(button);
 //form.appendChild(forgot);
 formdiv.appendChild(form);
 formdiv.appendChild(br3);
-formdiv.appendChild(forgot);
+formdiv.appendChild(a1);
 
 maindiv.appendChild(h1);
 maindiv.appendChild(formdiv);
